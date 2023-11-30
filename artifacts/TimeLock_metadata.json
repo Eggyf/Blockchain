@@ -1,0 +1,69 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_seconds",
+						"type": "uint256"
+					}
+				],
+				"name": "increaseLockTime",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"timelock.sol": "TimeLock"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"timelock.sol": {
+			"keccak256": "0x7351d5b8ebbf0c4807c62d2aad3aa698e4f9ebd055b1141d7973e6bec9fdc6f5",
+			"urls": [
+				"bzzr://b99add8d7c18aaf05aa6ac1d567378dd6f543abbee35086977d7404951c600d9"
+			]
+		}
+	},
+	"version": 1
+}
