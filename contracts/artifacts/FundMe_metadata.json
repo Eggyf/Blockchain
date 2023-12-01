@@ -30,6 +30,19 @@
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -55,11 +68,25 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/FundMe.sol": {
-			"keccak256": "0xe743f80859383936a513034c25d4ffa5478d389ab07b7fba2b64803a5d34c481",
+		"@chainlink/contracts/src/v0.6/interfaces/AggregatorV3Interface.sol": {
+			"keccak256": "0x7171939fd22c628f15406eda07bb4de4f0fda4808790f8334e5b9e1a7ca90f8a",
 			"urls": [
-				"bzz-raw://faf7994df8d7cc811da5dc8d123f82292f7738e5e35d5d627aa93435553fd4bf",
-				"dweb:/ipfs/QmbnFuuJdQyxLmh5qVfxKTrGKLZL5JivBWeZqropHYCDKC"
+				"bzz-raw://b085262fc0889ef3079b0abbe56aa009550f50c7976a67a21c1617fdda2504ce",
+				"dweb:/ipfs/QmdqjNoPJsdgH7CN1x2yoroFQsdNNg16woFasSQXR83sWU"
+			]
+		},
+		"@chainlink/contracts/src/v0.6/vendor/SafeMathChainlink.sol": {
+			"keccak256": "0x105f5e9491f3d0bbdd4f1c7627eb839d69b944bfd803028a01cc083597692c1f",
+			"urls": [
+				"bzz-raw://ec45a2748a024a947a921183d4102d5e206808588501d85ddc4f5668a009bc73",
+				"dweb:/ipfs/QmRNAMpq7LdWFnJ7wWKGbUuAcURaGSS42PMxtQ4vjrHmp9"
+			]
+		},
+		"contracts/FundMe.sol": {
+			"keccak256": "0x599670c9822c7d89a65524a544d994813af34cb70a0b6ff8578e2ff0cfda6d60",
+			"urls": [
+				"bzz-raw://664d944f2313b34923513a9c096fd38c8c85c70db4e7f03e4dd83fdb8dd9f9c7",
+				"dweb:/ipfs/QmYCHnz3b4D6VSkGntCpn9hCv9Sn76xfUNG1QWcDWZzmH5"
 			]
 		}
 	},
