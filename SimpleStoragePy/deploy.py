@@ -43,7 +43,7 @@ my_address = "0x21EA3aEB59Ea693a31a6E1771fe9e29Df3818515"
 private_key = os.getenv("PRIVATE_KEY")
 
 SimpleStorage = w3.eth.contract(abi=abi, bytecode=bytecode)
-print(SimpleStorage)
+
 
 # nonce
 nonce = w3.eth.get_transaction_count(my_address)
@@ -58,4 +58,14 @@ transaction = SimpleStorage.constructor().build_transaction(
 )
 
 signed_txn = w3.eth.account.sign_transaction(transaction, private_key=private_key)
-print(signed_txn)
+
+
+tx_hash = w3.eth.send_raw_transaction(signed_txn.rawTransaction)
+print("Waiting for transaction")
+tx_receipt = w3.eth.wait_for_transaction_receipt(tx_hash)
+
+
+#
+simple_storage = w3.eth.contract(address=tx_receipt.contractAddress, abi=abi)
+
+print(simple_storage.functions.retrieve().call())
